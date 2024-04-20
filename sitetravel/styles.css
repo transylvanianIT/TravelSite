@@ -1,0 +1,210 @@
+:root{
+    --orange: #ff6b0a;
+    --lightorange: #ff7757;
+    --white: #ffffff;
+    --grey: #172432;
+    --mainfont: "Montserrat", sans-serif;
+    --second-font: "Playfair Display", serif;
+    --tertiary-font: "Ruby", sans-serif;
+    --transparent-black: rgba(0, 0, 0, 0.2);
+    --dark-black: rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--second-font);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+button{
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+p{
+    font-family: var(--mainfont);
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: -110px;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: left;
+
+    background-image: linear-gradient(
+        var(--transparent-black),
+        var(--dark-black)
+        ), 
+        url("./images/munti.png");
+        
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.hero-title{
+    font-size: 84px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.hero-description{
+    font-size: 24px;
+    font-family: 300;
+    margin-bottom: 60px;
+
+}
+
+.hero-button{
+    font-size: 64px;
+    color: var(--white);
+    background-color: var(--lightorange);
+    border-radius: 12px;
+    padding: 10px 40px;
+
+}
+
+.hero-button:hover{
+
+    background-color: var(--orange);
+}
+
+#destinations{
+    padding: 140px 8%;
+}
+
+.title{
+    font-size: 64px;
+    margin-bottom: 32px;
+    font-weight: 300;
+
+}
+
+.line{
+    max-width: 365px;
+    border: 1px solid var(--lightorange);
+    margin-bottom: 32px;
+}
+
+.destdescription{
+    font-size: 24px;
+
+}
+
+
+.destcards{
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    color: var(--white );
+}
+
+.destcard{
+    flex: 1;
+    min-width: 400px;
+    height: 660px;
+    background-color: red;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+            
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destcard h3{
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.destcard div{
+
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.destcard p{
+    font-size: 24px;
+}
+
+.destcard--1{
+    background-image: url(./images/berlin.jpeg);
+
+}
+
+.destcard--2{
+    background-image: url(./images/London.jpeg);
+
+}
+
+.destcard--3{
+    background-image: url(./images/Venice.jpeg);
+
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--grey);
+    padding: 100px 8%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.flogo p{
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.footer h4{
+    font: var(--mainfont);
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.footer li{
+    margin-bottom: 12px;
+    font-family: var(--tertiary-font);
+}
+
+.fsocial div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
